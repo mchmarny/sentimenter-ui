@@ -1,6 +1,12 @@
 # -sentimenter-ui
 
-The UI portion of sentimenter
+The UI portion of logic implemented in Google Cloud Functions
+
+
+## Demo
+
+https://sentimenter.demome.tech/
+
 
 ## Setup Bucket
 
