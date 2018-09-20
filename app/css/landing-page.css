@@ -62,8 +62,12 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   .showcase .showcase-text {
-    padding: 7rem;
+    padding: 3em 7em 2em 10em;
   }
+}
+
+.showcase-text p {
+    font-size: 1.2rem;
 }
 
 .features-icons {
@@ -127,13 +131,5 @@ footer.footer {
 
 i {
   font-style: normal;
-}
-
-h2 {
-  margin-top: 30px;
-}
-
-.progress-row {
-  font-size: 1.2em;
 }
 

@@ -48,6 +48,8 @@ function appendStatus(data) {
 
     $("#searchterm").html(data.search_term);
     $("#status").html(data.status);
+    $("#rid").html(data.id);
+    $("#eon").html(data.created_on);
 
     if (data.status === "Processed" && data.result) {
 
@@ -59,7 +61,9 @@ function appendStatus(data) {
     } else {
         //TODO: need some form of breaker here
         if (data.status_url) {
-            getStatus(data.status_url);
+            setTimeout(function () {
+                getStatus(data.status_url);
+            }, 500);
         }
     }
 
