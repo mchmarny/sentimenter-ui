@@ -11,7 +11,7 @@
   <title>sentimenter</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="css/landing-page.css" rel="stylesheet">
 
 </head>
 
@@ -50,12 +50,56 @@
     </div>
   </header>
 
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+
+  <section class="block-section">
     <div class="container">
-      Recent results go here
+
+      <h2>Progress</h2>
+
+      <div class="progress-row">
+        <b>Term:</b>
+        <i id="searchterm"></i>
+      </div>
+
+      <div class="progress-row">
+        <b>Status:</b>
+        <i id="status"></i>
+      </div>
+
     </div>
   </section>
+
+
+  <section class="block-section">
+    <div class="container">
+      <div id="score" class="progress-row">
+        <h2>Score</h2>
+
+        <div class="score-row">
+          <b>Sampled:</b>
+          <i id="records"></i>
+        </div>
+
+        <div class="score-row">
+          <b>Positive:</b>
+          <i id="positive"></i>
+        </div>
+
+        <div class="score-row">
+          <b>Negative:</b>
+          <i id="negative"></i>
+        </div>
+
+        <div class="score-row">
+          <b>Score:</b>
+          <i id="tottalscore"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
 
   <!-- Bootstrap core JavaScript -->

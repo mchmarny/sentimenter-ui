@@ -105,7 +105,6 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -125,3 +124,16 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+i {
+  font-style: normal;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.progress-row {
+  font-size: 1.2em;
+}
+
