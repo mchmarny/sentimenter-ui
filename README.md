@@ -1,6 +1,6 @@
-# -sentimenter-ui
+# sentimenter-ui
 
-The UI portion of logic implemented in Google Cloud Functions
+This Single Page App (SPA) is build using only static content (html, css, javascript) deployed in Google Cloud Storage and fronted by SSL termination in Cloudflare. The logic of the `sentimenter` app is implemented in Google Cloud Functions.
 
 
 ## Demo
