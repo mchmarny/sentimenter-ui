@@ -14,10 +14,14 @@ $("#term-submit").submit(function (event) {
         return;
     }
 
+    // reset
+    $(".dynamic-data").html("");
+
+
     $.getJSON(cfURL + "sentimenter-submit?term=" + term)
         .done(function (data) {
             if (data) {
-                console.log(data);
+                //console.log(data);
                 $("#term").val("");
 
                 appendStatus(data);
@@ -36,7 +40,7 @@ $("#term-submit").submit(function (event) {
 
 function appendStatus(data) {
 
-    console.log(data);
+    //console.log(data);
 
     if (!data) {
         return;
@@ -46,8 +50,6 @@ function appendStatus(data) {
     $("#status").html(data.status);
 
     if (data.status === "Processed" && data.result) {
-
-        //$("#score").show();
 
         $("#records").html("" + data.result.tweets + " tweets");
         $("#positive").html(data.result.positive);
