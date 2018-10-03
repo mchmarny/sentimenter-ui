@@ -3,14 +3,20 @@
 This Single Page App (SPA) is build using only static content (html, css, javascript) deployed in Google Cloud Storage (GCS) and fronted by SSL termination in Cloudflare. Additionally, all the logic of the [sentimenter](https://github.com/mchmarny/sentimenter/) app is implemented in Google Cloud Functions.
 
 
-## Demo
+## Demo 
 
 https://sentimenter.demome.tech/
 
+> Note, this live demo is throtled to 1,000 invokations a day
+
 ## Setup
+
+TO setup `sentimenter` on GCP you will need [gsutil](https://cloud.google.com/storage/docs/gsutil), free command-line tool for Google Cloud Storage. You can use this tool to perform many common tasks. 
 
 
 ### GCS Bucket
+
+The bucket name has to be globally unique so use the name of the domain which you will use to host your UI under. 
 
 ```shell
 gsutil mb gs://sentimenter.demome.tech
@@ -18,11 +24,15 @@ gsutil mb gs://sentimenter.demome.tech
 
 ### GCS Access
 
+Make the bucket publically accesable (this is a 'world-wide' part of Web) 
+
 ```shell
 gsutil iam ch allUsers:objectViewer gs://sentimenter.demome.tech
 ```
 
 ### GCS Landing page
+
+Designate the `index.html` as a default page in your web site
 
 ```shell
 gsutil web set -m ./app/index.html gs://sentimenter.demome.tech
