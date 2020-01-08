@@ -1,5 +1,5 @@
 
-var cfURL = "https://us-central1-s9-demo.cloudfunctions.net/"
+var cfURL = "https://us-central1-cloudylabs.cloudfunctions.net/"
 
 $("#term-submit").submit(function (event) {
     var term = $("#term").val();
